@@ -38,16 +38,6 @@ public class BotBrain {
     public boolean isMe() { return isMe; }
 
     public String respond() throws IOException {
-        if (message.indexOf("test")>=0){
-            isCommand = true;
-            System.out.println("works on this end");
-            return "test";
-        }
-        if (message.indexOf("rep")>=0){
-            isCommand = true;
-            country = words[1];
-            return country;
-        }
         if (message.indexOf("cData")>=0) {
             isCommand = true;
             country = words[1];

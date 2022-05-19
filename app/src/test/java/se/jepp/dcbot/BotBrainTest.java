@@ -28,20 +28,8 @@ public class BotBrainTest {
         assertFalse("Message must not be a command!", botBrain.isCommand());
     }
     @Test
-    public void shouldAnswerWhenCommandIsSent() throws Exception {
-        BotBrain botBrain = new BotBrain("hello there", "Jepp");
-        assertEquals("Should send message when command is called!", "general Kenobi", botBrain.respond());
-        System.out.println(botBrain.respond());
-    }
-    @Test
-    public void shouldAnswerWhenCommandIsSent2() throws Exception {
-        BotBrain botBrain = new BotBrain("rep italy", "Jepp");
-        assertEquals("should match second word of message", "italy", botBrain.respond());
-        System.out.println(botBrain.respond());
-    }
-    @Test
     public void shouldSendCorrectData() throws Exception{
-        BotBrain botBrain = new BotBrain("cData france", "Jepp");
+        BotBrain botBrain = new BotBrain("!cData sweden", "Jepp");
         System.out.println(botBrain.respond());
     }
 }
