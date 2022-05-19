@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 public class App {
 
     public static void main(String[] args) throws LoginException, IOException {
-        JDABuilder jda = JDABuilder.createDefault("OTQ5Mjk2MTUxNzYzNTA5MjY4.G7sMzG.9ZJYK1bjVQ_75am6mOnz2Q47EkYQSYLEyirlkE");
+        JDABuilder jda = JDABuilder.createDefault("[bot token]");
         jda.setStatus(OnlineStatus.ONLINE);
         jda.setActivity(Activity.listening("!cData"));
         jda.addEventListeners(new CBot());
