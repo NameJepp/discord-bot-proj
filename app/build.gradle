@@ -1,0 +1,29 @@
+import static java.util.regex.Pattern.compile
+
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation("net.dv8tion:JDA:4.3.0_277")
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.google.guava:guava:30.1.1-jre'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.2'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.2.3'
+}
+
+application {
+    mainClass = 'se.jepp.dcbot.App'
+}
