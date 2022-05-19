@@ -74,6 +74,10 @@ public class BotBrain {
                     cData += data+"\n";
                 }
             }
+            if (cData.equalsIgnoreCase(""))
+            {
+                return "Could not find data for entered country";
+            }
             return cData;
         }
         return "No message selected";

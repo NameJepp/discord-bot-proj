@@ -20,9 +20,10 @@ public class App {
     public static void main(String[] args) throws LoginException, IOException {
         JDABuilder jda = JDABuilder.createDefault("OTQ5Mjk2MTUxNzYzNTA5MjY4.YiIS7w.ZzIpNu-tNzJpBHUnOkubP48M05c");
         jda.setStatus(OnlineStatus.ONLINE);
-        jda.setActivity(Activity.watching("cData"));
+        jda.setActivity(Activity.listening("!cData"));
         jda.addEventListeners(new CBot());
         jda.build();
+
         System.out.println("***********************");
         URL url = ClassLoader.getSystemResource("data.json");
         String jsonString = URLReader(url);
