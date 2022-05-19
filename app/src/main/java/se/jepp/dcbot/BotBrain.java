@@ -38,10 +38,6 @@ public class BotBrain {
     public boolean isMe() { return isMe; }
 
     public String respond() throws IOException {
-        if (message.indexOf("hello there")>=0){
-            isCommand = true;
-            return "general Kenobi";
-        }
         if (message.indexOf("test")>=0){
             isCommand = true;
             System.out.println("works on this end");
